@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AR	Makefile	/^AR	= $(CROSS)ar$/;"	m
+BIN	Makefile	/^BIN		  = dev_test$/;"	m
+CC	Makefile	/^CC	= $(CROSS)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS  = -Wall -Wshadow -Wno-trigraphs -pipe$/;"	m
+CROSS	Makefile	/^CROSS	?= arm-none-linux-gnueabi-$/;"	m
+LD	Makefile	/^LD	= $(CROSS)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -lm $/;"	m
+OBJS	Makefile	/^OBJS		= $(SRCS:.c=.o)$/;"	m
+RANLIB	Makefile	/^RANLIB  = $(CROSS)ranlib$/;"	m
+SRCS	Makefile	/^SRCS		= $(BIN).c$/;"	m
+STRIP	Makefile	/^STRIP   = $(CROSS)strip$/;"	m
+handler	dev_test.c	/^void handler (int sig)$/;"	f
+main	dev_test.c	/^int main (int argc, char *argv[])$/;"	f
+perror_exit	dev_test.c	/^void perror_exit (char *error)$/;"	f
